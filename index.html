@@ -11,7 +11,8 @@
    COLOUR and TYPE: 白地・黒文字・ブラウザ既定の青紫リンク、ブラウザ既定フォント
    LAYOUT: 左メニュー固定幅、右が独立してスクロール */
 html,body{margin:0;height:100%;color:#000}
-body{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='64'%3E%3Cg font-family='Times New Roman,serif' font-style='italic' font-size='20' fill='%23dcdcf0'%3E%3Ctext x='4' y='24'%3EYuhei Yoshimitsu%3C/text%3E%3Ctext x='124' y='56'%3EYuhei Yoshimitsu%3C/text%3E%3Ctext x='-116' y='56'%3EYuhei Yoshimitsu%3C/text%3E%3C/g%3E%3C/svg%3E") repeat}
+body{background:#fff}
+body::before{content:"";position:fixed;left:-50%;top:-50%;width:200%;height:200%;z-index:-1;pointer-events:none;transform:rotate(-30deg);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='110'%3E%3Cg font-family='Times New Roman,serif' font-style='italic' font-size='34' fill='%23dcdcf0'%3E%3Ctext x='6' y='40'%3EYuhei Yoshimitsu%3C/text%3E%3Ctext x='196' y='95'%3EYuhei Yoshimitsu%3C/text%3E%3Ctext x='-184' y='95'%3EYuhei Yoshimitsu%3C/text%3E%3C/g%3E%3C/svg%3E") repeat}
 body{display:flex;font-size:16px;line-height:1.4}
 a:link{color:#0000ee}a:visited{color:#551a8b}a:active{color:#ff0000}
 #menu{flex:0 0 150px;height:100%;overflow:auto;border-right:2px inset #c0c0c0;padding:8px 0}
